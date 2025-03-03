@@ -1,11 +1,9 @@
-// src/BulkBarcodeGenerator.jsx
 import React, { useState } from "react";
 import { QRCodeCanvas } from "qrcode.react";
 import * as XLSX from "xlsx";
 import JSZip from "jszip";
 import { saveAs } from "file-saver";
 
-// Helper function: convert a data URL to a Blob
 function dataURLtoBlob(dataurl) {
   const arr = dataurl.split(",");
   const mime = arr[0].match(/:(.*?);/)[1];

@@ -132,6 +132,7 @@ const SingleBarcodeGenerator = () => {
               value={formData.Supplier}
               onChange={handleChange}
               placeholder="Unknown Supplier"
+              required
             />
           </label>
         </div>
@@ -194,6 +195,7 @@ const SingleBarcodeGenerator = () => {
               value={formData.InvoiceNo}
               onChange={handleChange}
               placeholder="Default Invoice"
+              required
             />
           </label>
         </div>
@@ -224,7 +226,7 @@ const SingleBarcodeGenerator = () => {
           <label>
             Amount:{" "}
             <input
-              type="text"
+              type="number"
               name="Amount"
               value={formData.Amount}
               onChange={handleChange}
@@ -249,10 +251,3 @@ const SingleBarcodeGenerator = () => {
 };
 
 export default SingleBarcodeGenerator;
-  
-  // In the above code, we have created a new component called  SingleBarcodeGenerator  which is a form that allows the user to input data for a single barcode. The form has fields for the Purchase Order Number, Receiving Number, Supplier, and Item details. 
-  // The form also has a submit button that generates a QR code based on the form data. The QR code is displayed on the page and can be downloaded as a PNG file by clicking the "Download Barcode" button. 
-  // Step 4: Add the SingleBarcodeGenerator Component to App.js 
-  // Now that we have created the  SingleBarcodeGenerator  component, we can add it to the  App  component. 
-  // Open the  src/App.js  file and update it as follows: 
-  // // src/App.js
